@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <style>
+        /*  */
+        .navbar{
+            height: 3rem;
+            display: flex;
+            justify-content: end;
+        }
+        .navbar a{
+            text-decoration: none;
+        }
+        .image-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("mzcet.jpg");
+            width: 100vw;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .main-div{
+            
+            overflow-x: hidden;
+        }
+        .container {
+           display: flex;
+           gap: 2rem;
+           flex-direction: column;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            padding: 80px; /* Increased padding */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body class="main-div">
+    <div class="navbar">
+        <a href="">participate</a>
+    </div>
+
+    <div class="image-container">
+        
+        
+        <!-- Login form container -->
+        <div class="container">
+            <h2>Admin Login</h2>
+                <div class="">
+                    <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                </div>
+
+                <div class="">
+                    <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                </div>
+
+                <button type="submit">Login</button>
+        </div>
+    </div>
+</body>
+</html>
